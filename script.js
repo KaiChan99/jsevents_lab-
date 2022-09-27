@@ -10,5 +10,8 @@ enterBtn.addEventListener('click', ()=>{
     let deleteBtn = document.createElement('button');
     deleteBtn.innerText = "Delete";
     document.body.appendChild(deleteBtn);
-
+    deleteBtn.onclick = function (){
+        list.removeChild(listItem);
+        document.body.removeChild(deleteBtn);
+    }
 })
