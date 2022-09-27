@@ -15,3 +15,11 @@ enterBtn.addEventListener('click', ()=>{
         document.body.removeChild(deleteBtn);
     }
 })
+
+const dateBtn = document.getElementById("date");
+
+dateBtn.addEventListener('click', ()=>{
+    const dateDisplay = document.getElementById("dateDisplay");
+    dateDisplay.innerText = Date();
+})
+
